@@ -1,0 +1,31 @@
+name: keycloak
+title: Keycloak
+icon: keycloak
+
+services:
+- name: keycloak
+  title: Keycloak
+  service: keycloak
+  required: true
+  main: true
+  links:
+  - name: postgres
+    service: postgres
+  workloads:
+  - name: main
+    containers:
+    - name: keycloak
+      resources:
+        request:
+          cpu: 500
+          memory: 512
+        limit:
+          cpu: 1000
+          memory: 1536
+- name: postgres
+  title: PostgreSQL
+  service: postgres
+  required: true
+  volumes:
+  - name: data
+    size: 20
