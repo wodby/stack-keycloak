@@ -12,17 +12,6 @@ services:
   links:
   - name: postgres
     service: postgres
-  workloads:
-  - name: main
-    containers:
-    - name: keycloak
-      resources:
-        request:
-          cpu: 500
-          memory: 512
-        limit:
-          cpu: 1000
-          memory: 1536
 - name: postgres
   title: PostgreSQL
   service: postgres
