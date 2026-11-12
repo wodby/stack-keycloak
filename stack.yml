@@ -2,6 +2,11 @@ name: keycloak
 title: Keycloak
 icon: keycloak
 docs: https://wodby.com/docs/2.0/stacks/catalog/keycloak/
+# The main stack of the Keycloak variants: the catalog shows this next to the
+# link to it on the variants' pages.
+variantDescription: >-
+  Choose this when Keycloak's own themes and features are enough: it runs the
+  official Keycloak image, with no Git repository to maintain and no builds.
 
 services:
 - name: keycloak
