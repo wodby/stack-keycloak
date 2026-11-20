@@ -1,6 +1,7 @@
 name: keycloak
 title: Keycloak
 icon: keycloak
+category: networking
 docs: https://wodby.com/docs/2.0/stacks/catalog/keycloak/
 # The main stack of the Keycloak variants: the catalog shows this next to the
 # link to it on the variants' pages.
